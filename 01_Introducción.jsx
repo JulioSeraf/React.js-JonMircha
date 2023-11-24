@@ -1,37 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introducción a React.js</title>
-    <style>
-        html{
-            font-size: 16px;
-        }
-        body{
-            background-color: lightgray;
-            font-family: sans-serif;
-            text-align: center;
-            max-width: 80%;
-            margin: auto;
-
-        }
-        span{
-            background-color: lightgreen;
-        }
-        p{text-align: left;}
-        hr{
-            border: 1px solid black;
-        }
-    </style>
-</head>
-<body>
+<>
     <h1>React.js Intruccón</h1>
     <p>React es una <strong>biblioteca o livreria JavaScript</strong> automente suficiente y declaratica que se ultiliza para el desarrollo de interfases de usuarios</p>
     <p>React es un alibreria que lo unicio que hace es criar interfaces de formas dinamicas</p>
     <p>Criando por halla de marzo de por engeñeiro de <strong>facebook</strong></p>
 
-    <hr>
+    <hr/>
 
     <h2>Ventajas</h2>
 
@@ -49,7 +22,7 @@
 
     <p><strong>Flujo de datos unidireccional</strong>: el enlace de datos unidireccional y hacia abajo (de componentes padres y hijos) ayuda garantizar que cambios realizados en el componente hijos no afecte la estructura del componente padre.</p>
 
-    <hr>
+    <hr/>
 
     <h2>Desventajas</h2>
 
@@ -61,12 +34,12 @@
     
     <p><strong>Problemas de SEO</strong>: Se sabe que las SPAs(Single Page Applications) creadas com React se enfrentan a probelams de indexación por parte de los rastreadores y bots de motores de busquedas.</p>
 
-    <hr>
+    <hr/>
 
     <h2>¿Quién lo usa?</h2>
     <p>Grandes empresas como Netflix, Yahoo, Airbnb, intagram, facebook, WhatsApp, PayPal, Microsoft, la BCC, Aeromexico,etc. Incluso grandes  sitios de informacion y noticias que antes usaban  WordPress ser estan migrando a sitios hechos con JAM stack y React como libreria principal, tal es ek caso de smarhing magazine.</p>
 
-    <hr>
+    <hr/>
 
     <h2>Entorno y herramientas de Desarrollo</h2>
 
@@ -82,8 +55,4 @@
     <p><strong>GraphQL</strong>: Es una linguaje de cosulta de datos para APIs.</p>
     <p><strong>React Bootstrap</strong>: Es la version del popular Framework frontend Bootstrap pero criado con componentes hechos en React</p>
     <p><strong>Material UI</strong>: Es un framework frontend inspirado en material Design creados con componentes hechos en React.</p>    
-
-    
-</body>
-</html>
-
+</>

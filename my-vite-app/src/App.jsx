@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Componente from './componentes/Componente'
+import Propiedades from './componentes/Propiedades'
 import './App.css'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       </p>
       <section>
         <Componente msg="Hola soy un componente Funcional expresado desde una props"/>
+        <Propiedades/>
       </section>
     </>
   )
