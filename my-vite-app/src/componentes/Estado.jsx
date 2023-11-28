@@ -15,12 +15,12 @@ export default class Estado extends Component{
         this.state = {
             contador:0
         }
-        setInterval(()=>{
-            this.setState({
-                // this.state.contador += 1; esto no funcionario pues el state no se puede modificar directamente
-                contador: this.state.contador + 1
-            })
-        },1000)
+        // setInterval(()=>{
+        //     this.setState({
+        //         // this.state.contador += 1; esto no funcionario pues el state no se puede modificar directamente
+        //         contador: this.state.contador + 1
+        //     })
+        // },1000)
     }
     render(){
         return(

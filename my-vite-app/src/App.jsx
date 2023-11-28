@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import Componente from './componentes/Componente';
 import Propiedades from './componentes/Propiedades';
 import Estado from './componentes/Estado';
+import RenderizadoCondicional from './componentes/RenderizadoCondicionar';
 import './App.css';
 
 function App() {
@@ -44,6 +45,8 @@ function App() {
         componenteReact={<Componente msg="soy un componente pasado como prop"/>}/>
         <hr/>
         <Estado/>
+        <hr/>
+        <RenderizadoCondicional/>
       </section>
     </>
   )
