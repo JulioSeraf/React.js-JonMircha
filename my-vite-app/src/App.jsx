@@ -32,7 +32,15 @@ function App() {
       </p>
       <section>
         <Componente msg="Hola soy un componente Funcional expresado desde una props"/>
-        <Propiedades/>
+        {/* para passar un numero tenemos que usar {} ya que se usamos las "" seria una cadena de texto los booleanos igual */}
+        <Propiedades cadena="Esto es una cadena de texto" 
+        numero={12}
+        booleano={true}
+        array={[2 ,4, 26]}
+        objeto={{correo:"juliodev26@gmail.com"}}
+        function={(num)=> num * num}
+        elementoReact={<i>Esto es un elemento React</i>}
+        componenteReact={<Componente msg="soy un componente pasado como prop"/>}/>
       </section>
     </>
   )
