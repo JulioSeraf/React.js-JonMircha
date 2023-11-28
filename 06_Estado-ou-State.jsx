@@ -1,6 +1,6 @@
 <>
 <h1>Estado</h1>
-<p>El <strong>state</strong> son son los valores internos que mantine la logica y los datos de un componente, permite que este reacione a cualquer cambio lo que hara q vuelva a renderizar en la interfaz</p>
+<p>El <strong>state</strong>   son los valores internos que mantine la logica y los datos de un componente, permite que este reacione a cualquer cambio lo que hara q vuelva a renderizar en la interfaz</p>
 
 <p>El estado tiene 3 caracteristicas importante:</p>
 <ul>

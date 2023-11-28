@@ -1,9 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Componente from './componentes/Componente'
-import Propiedades from './componentes/Propiedades'
-import './App.css'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import Componente from './componentes/Componente';
+import Propiedades from './componentes/Propiedades';
+import Estado from './componentes/Estado';
+import './App.css';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,6 +42,8 @@ function App() {
         function={(num)=> num * num}
         elementoReact={<i>Esto es un elemento React</i>}
         componenteReact={<Componente msg="soy un componente pasado como prop"/>}/>
+        <hr/>
+        <Estado/>
       </section>
     </>
   )
