@@ -6,6 +6,7 @@ import Propiedades from './componentes/Propiedades';
 import Estado from './componentes/Estado';
 import RenderizadoCondicional from './componentes/RenderizadoCondicionar';
 import RenderizadoDeElemento from './componentes/RenderizadoDeElementos';
+import Eventos from './componentes/Eventos';
 import './App.css';
 
 function App() {
@@ -50,6 +51,8 @@ function App() {
         <RenderizadoCondicional/>
         <hr/>
         <RenderizadoDeElemento/>
+        <hr/>
+        <Eventos/>
       </section>
     </>
   )
