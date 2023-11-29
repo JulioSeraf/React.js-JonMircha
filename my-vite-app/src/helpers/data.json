@@ -13,12 +13,12 @@
         {
             "id":3,
             "name":"Vue",
-            "web": "httts://vue.org"
+            "web": "https://vuejs.org/"
         },
         {
             "id":4,
             "name":"Polymer",
-            "web": "https://polymer-project.org"
+            "web": "https://www.polymer-project.org"
         },
         {
             "id":5,
