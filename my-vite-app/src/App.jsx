@@ -6,7 +6,7 @@ import Propiedades from './componentes/Propiedades';
 import Estado from './componentes/Estado';
 import RenderizadoCondicional from './componentes/RenderizadoCondicionar';
 import RenderizadoDeElemento from './componentes/RenderizadoDeElementos';
-import Eventos from './componentes/Eventos';
+import { EventosES6,EventosES7 } from './componentes/Eventos';
 import './App.css';
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
       </p>
       <section>
         <Componente msg="Hola soy un componente Funcional expresado desde una props"/>
-        {/* para passar un numero tenemos que usar {} ya que se usamos las "" seria una cadena de texto los booleanos igual */}
+        {/* para passar un numero tenemos que usar {} ya que se usamos las "" seria una cadena de texto y a los booleanos igual */}
         <Propiedades cadena="Esto es una cadena de texto" 
         numero={12}
         booleano={true}
@@ -52,7 +52,8 @@ function App() {
         <hr/>
         <RenderizadoDeElemento/>
         <hr/>
-        <Eventos/>
+        <EventosES6/>
+        <EventosES7/>
       </section>
     </>
   )
