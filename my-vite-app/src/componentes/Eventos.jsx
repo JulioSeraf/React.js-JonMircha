@@ -72,4 +72,39 @@ export class EventosES7 extends Component{
             </div>
         )
     }
-}
+};
+
+// function Boton (props){
+//     return(
+//         <button onClick={props.MyonClick}>Botón hecho Componente</button>
+//     )
+// };
+
+// Simplificando 
+const Boton =(props)=>{
+    <button onClick={props.MyonClick}>Botón hecho Componente</button>
+};
+
+
+export class MasSobreEventos extends Component{
+    handleClick = (e,mensage)=>{
+        console.log(e)
+        console.log(e.nativeEvent)
+        console.log(e.target)
+        console.log(e.nativeEvent.target)
+        console.log(mensage)
+        
+
+    };
+    render(){
+        return(
+            <div>
+                <h2>Mas sobre Eventos</h2>
+                <button onClick={(e)=>this.handleClick(e,"Hola, pasando paremetro desde un evento")}>Saludar</button>
+                {/* Evento Personalizado, no es mas que un componente que lo asegnamos un prop para que funcione como un evento  */}
+                {/* Ya que los atributos de eventos son para las tag JSX y no para los elementos/Componentes react */}
+                <Boton MyonClick={(e)=>this.handleClick(e, "Hola pasando parámetro desde un evento")}/>
+            </div>
+        );
+    };
+};
