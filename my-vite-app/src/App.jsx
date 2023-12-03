@@ -8,6 +8,7 @@ import RenderizadoCondicional from './componentes/RenderizadoCondicionar';
 import RenderizadoDeElemento from './componentes/RenderizadoDeElementos';
 import { EventosES6,EventosES7, MasSobreEventos } from './componentes/Eventos';
 import './App.css';
+import Padre from './componentes/ComunicacionComponentes';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -57,6 +58,8 @@ function App() {
         <EventosES7/>
         <hr />
         <MasSobreEventos/>
+        <hr />
+        <Padre/>
       </section>
     </>
   )
