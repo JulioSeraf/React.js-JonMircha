@@ -9,6 +9,7 @@ import RenderizadoDeElemento from './componentes/RenderizadoDeElementos';
 import { EventosES6,EventosES7, MasSobreEventos } from './componentes/Eventos';
 import './App.css';
 import Padre from './componentes/ComunicacionComponentes';
+import CicloDeVida from './componentes/CicloDeVida';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -60,6 +61,8 @@ function App() {
         <MasSobreEventos/>
         <hr />
         <Padre/>
+        <hr />
+        <CicloDeVida/>
       </section>
     </>
   )
