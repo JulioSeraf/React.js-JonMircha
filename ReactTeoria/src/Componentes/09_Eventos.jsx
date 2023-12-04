@@ -1,4 +1,5 @@
-<>
+export default function Eventos(){
+    return <section>
     <h1>Eventos</h1>
     <p>Manejar eventos en JavaScript es similar a manejar eventos en el DOM. Sin embargo existen algunas diferencias de sintaxis
     </p>
@@ -9,4 +10,5 @@
     </ul>
     <p>Otra diferencia es que en React no puedes retornar false para prevenir un el comportamento por defecto, Debes, explicitamente , llamar preventDefaut.</p>
     
-</>
+</section>
+}

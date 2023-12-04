@@ -1,5 +1,6 @@
-<>
-    <h1>React.js Intruccón</h1>
+export default function ReactIntroduccion(){
+    return <section>
+    <h2>React.js Intruccón</h2>
     <p>React es una <strong>biblioteca o livreria JavaScript</strong> automente suficiente y declaratica que se ultiliza para el desarrollo de interfases de usuarios</p>
     <p>React es un alibreria que lo unicio que hace es criar interfaces de formas dinamicas</p>
     <p>Criando por halla de marzo de por engeñeiro de <strong>facebook</strong></p>
@@ -55,4 +56,5 @@
     <p><strong>GraphQL</strong>: Es una linguaje de cosulta de datos para APIs.</p>
     <p><strong>React Bootstrap</strong>: Es la version del popular Framework frontend Bootstrap pero criado con componentes hechos en React</p>
     <p><strong>Material UI</strong>: Es un framework frontend inspirado en material Design creados con componentes hechos en React.</p>    
-</>
+</section>
+};
