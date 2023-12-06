@@ -10,7 +10,7 @@ import { EventosES6,EventosES7, MasSobreEventos } from './componentes/Eventos';
 import './App.css';
 import Padre from './componentes/ComunicacionComponentes';
 import CicloDeVida from './componentes/CicloDeVida';
-
+import AjaxApis from './componentes/AjaxApis';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -63,6 +63,8 @@ function App() {
         <Padre/>
         <hr />
         <CicloDeVida/>
+        <hr />
+        <AjaxApis/>
       </section>
     </>
   )
