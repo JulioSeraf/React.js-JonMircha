@@ -12,7 +12,7 @@ function Pokemon(props){
 
 export default class AjaxApis extends Component{
     state = {
-        pokemons:{},
+        pokemons:[],
     }
 
     componentDidMount(){
@@ -20,14 +20,20 @@ export default class AjaxApis extends Component{
         fetch(url)
         .then(res=>res.ok?res.json():Promise.reject(res))
         .then(json =>{
-            console.log(json)
+            // console.log(json)
             json.results.forEach((el) => {
                 fetch(el.url).then(res => res.ok? res.json():Promise.reject())
                 .then(res => {
                     console.log(res);
-                    this.setState({
-                        pokemons:[res.name,res.sprites.front_default]
-                        });
+                    let pokemon = {
+                        id: res.id,
+                        name: res.name,
+                        avatar:res.sprites.front_default
+                    }
+
+                    let pokemons = [...this.state.pokemons, pokemon];
+
+                    this.setState({pokemons});
                 })
                 .catch()
             })
@@ -41,7 +47,9 @@ export default class AjaxApis extends Component{
         return(
             <>
                 <h2>Peticiones Asíncronas en Componentes de Clase</h2>
-                {this.state.pokemons.map(el=> <Pokemon avatar={el[0]} name={el[1]}/>)}
+                {this.state.pokemons.map((el)=> <Pokemon key={el.id} name={el.name} avatar={el.avatar}/>)}
+                {/* {console.log(this.state.pokemons)} */}
+
             </>
         );
     };
