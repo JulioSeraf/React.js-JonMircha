@@ -19,5 +19,5 @@ export default function ContadorHooks(props){
 
 // Passo de propiedades por defecto
 ContadorHooks.defaultProps = {
-    titulo: "Click"
+    titulo: "Clickk"
 }
