@@ -1,3 +1,5 @@
+
+
 export default function Hooks(){
     return(
         <section>
@@ -31,6 +33,24 @@ export default function Hooks(){
             </ul>
 
             <p>Puedes ver todas las lista de hooks disponbles en la documentacion de React</p>
+
+            <h3>UseState</h3>
+
+            <p>Permite manipular el estado de un componente funcional, se comporta como el objeto state y la función this.setState de los componentes de clase</p>
+
+            <p>Para usarlo debemos importalo desde la libreria React</p>
+
+            <p>import  "seState from "react";</p>
+            
+            <p>Ahora, en nuestro componente funcional, vamos a inicializar el hook, para ello asignaremos mediante la <strong>destructuración de arreglos 2 elementos</strong></p>
+
+            <ol>
+                <li>El valor del estado y,</li>
+                <li>Un método para actualizarlo(que seria el remplaso de this.setState de los componentes de Clase) </li>
+            </ol>
+
+            <p>Por convención se sugeri que le pongamos el mismo nombre al valor del estado y al metodo con el (set) delante Ex: state: valor / metodo : setValor</p>
+
         </section>
     )
 }

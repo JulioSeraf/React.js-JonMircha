@@ -10,6 +10,7 @@ import RenderizadoDeElemento from './Componentes/08-RenderizadoDeElementos';
 import Eventos from './Componentes/09_Eventos';
 import ComunicacionComponentes from './Componentes/12_Comunicación-entre-Componentes';
 import CicloDeVida from './Componentes/13_CiclodeVida';
+import Hooks from './Componentes/15_Hooks';
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
       <ComunicacionComponentes/>
       <hr />
       <CicloDeVida/>
+      <hr />
+      <Hooks/>
       
     </>
   )

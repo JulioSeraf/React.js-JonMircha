@@ -11,6 +11,7 @@ import './App.css';
 import Padre from './componentes/ComunicacionComponentes';
 import CicloDeVida from './componentes/CicloDeVida';
 import AjaxApis from './componentes/AjaxApis';
+import ContadorHooks from './componentes/ContadorHooks';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -65,6 +66,8 @@ function App() {
         <CicloDeVida/>
         <hr />
         <AjaxApis/>
+        <hr />
+        <ContadorHooks/>
       </section>
     </>
   )
