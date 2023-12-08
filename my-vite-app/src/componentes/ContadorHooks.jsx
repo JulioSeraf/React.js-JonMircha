@@ -7,7 +7,7 @@ export default function ContadorHooks(props){
     const restar = () =>setContador(contador - 1);
     return(
         <>
-            <h2>Contador con Hooks</h2>
+            <h2>Contador de {props.titulo} con Hooks usando useState</h2>
             <p>{contador}</p>
             <nav>
                 <button onClick={sumar}>+</button>
@@ -17,3 +17,7 @@ export default function ContadorHooks(props){
     )
 }
 
+// Passo de propiedades por defecto
+ContadorHooks.defaultProps = {
+    titulo: "Click"
+}
