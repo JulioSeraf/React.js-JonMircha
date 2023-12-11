@@ -12,6 +12,7 @@ import Padre from './componentes/ComunicacionComponentes';
 import CicloDeVida from './componentes/CicloDeVida';
 import AjaxApis from './componentes/AjaxApis';
 import ContadorHooks from './componentes/ContadorHooks';
+import ScrollHooks from './componentes/ScrollHoos';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -68,6 +69,8 @@ function App() {
         <AjaxApis/>
         <hr />
         <ContadorHooks/>
+        <hr/>
+        <ScrollHooks/>
       </section>
     </>
   )

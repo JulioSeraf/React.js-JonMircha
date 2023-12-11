@@ -11,6 +11,7 @@ import Eventos from './Componentes/09_Eventos';
 import ComunicacionComponentes from './Componentes/12_Comunicación-entre-Componentes';
 import CicloDeVida from './Componentes/13_CiclodeVida';
 import Hooks from './Componentes/15_Hooks';
+import Reloj from './Componentes/reloj';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </a>
       </div>
       <h1>React</h1>
+      <Reloj/>
       <ReactIntroduccion/>
       <hr />
       <SintaxisJSX/>

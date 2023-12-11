@@ -51,6 +51,26 @@ export default function Hooks(){
 
             <p>Por convención se sugeri que le pongamos el mismo nombre al valor del estado y al metodo con el (set) delante Ex: state: valor / metodo : setValor</p>
 
+            <h3>useEffect</h3>
+
+            <p>Permite hacer uso del ciclo de vida en un componente funcional</p>
+
+            <p>Usar useEffect equivale a la combinación de los métodos:    
+            </p>
+            <ul>
+                <li>componetDidMount()(Montaje)</li>
+                <li>componentDidUpdate()(actualización)</li>
+                <li>componentDidUpdateWillUnmount()(Desmontaje)</li>
+
+                <p>useEffect recibe como parámetro una funcion que se ejecutará cada vez que nuestro componente se renderice, ya sea por cambios del estado o las propiedades.</p>
+
+                <p>Para usarlo, debemos importarlo desde la librería de React</p>
+
+                <p><strong>import React, useEffect from "react".</strong></p>
+
+                <p>Para añadir un efecto que se ejecutara cada vez que nuestro componente se renderize, se debe pasar como parametro una funcón al hook useEffet misma que se ejecutatá al renderizarsre el componente</p>
+            </ul>
+
         </section>
     )
 }
