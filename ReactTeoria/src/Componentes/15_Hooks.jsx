@@ -69,6 +69,16 @@ export default function Hooks(){
                 <p><strong>import React, useEffect from "react".</strong></p>
 
                 <p>Para añadir un efecto que se ejecutara cada vez que nuestro componente se renderize, se debe pasar como parametro una funcón al hook useEffet misma que se ejecutatá al renderizarsre el componente</p>
+
+                <p>Con useEffect también podemos suscribirnos y desuscribirnos a eventos, temporizadores, servicios,API's, etc.</p>
+
+                <p>Para ello hay que escribir el codigo de la sucripción en el cuerpo de la función de useEffect y para evitar problemas de rendimiento o aumento indescriminado de la memoria y recursos de nuesta aplicación retornar en una funciíon el código que desuscriba o cancele lo que se ejecuto en el cuerpo de la función</p>
+
+                <p>Por defecto lo efecto se ejecutan cada vez que hay un renderizado, si queremos evitar actualizaciónes inecessarias o indiscriminadas podemos pasarle un segundo parámetro al hook.</p>
+
+                <p>EL parámetro debe ser un array con todos los valores de los que dependerá el efecto, de forma que solo se ejecutar cuando ese valor cambie</p>
+
+                <p>Si le pasamos un array vacío, eso hará que el efecto no dependa de ningún valor, por lo que sólo se ejecutará al montarse u desmontarse el componente</p>
             </ul>
 
         </section>

@@ -23,9 +23,9 @@ export default function ScrollHooks(){
 
    useEffect(()=>{
     console.log("Fase de Montaje")
-    // al Passar un array como segundo parametro de useEffect, podemos asignar estados a este array con esso este useeffect solo se atualizara con cambie el estado 
+    // al Passar un array como segundo parametro de useEffect, podemos asignar estados a este array con esso este useeffect solo se atualizara con cambie el estado, lo que seria la fase de desmontaje, tbm se atualizaria sem el segundo parametro pero lo recomendado es manten controlado nuestro codigo 
 
-    // Se necessitamos hacer peticiones a apis externas, o solicitudes, React recomensa que dejamos el array vacio, para que use effect solo se ejecute una sola vez
+    // Se necessitamos hacer peticiones a apis externas, o solicitudes, React recomensa que dejamos el array vacio, para que use effect solo se ejecute una sola vez lo que seria la fase de montaje
    },[]);
 
    useEffect(()=>{
