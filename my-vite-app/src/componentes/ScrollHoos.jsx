@@ -6,7 +6,7 @@ export default function ScrollHooks(){
     // Ejemplo Principal de useEffect
 
    useEffect(()=>{
-    console.log("Moviedo el Scroll");
+    // console.log("Moviedo el Scroll");
 
     const detectarScroll = ()=> setScrollY(window.scrollY);
     
