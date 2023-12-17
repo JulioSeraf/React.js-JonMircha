@@ -15,6 +15,7 @@ import ContadorHooks from './componentes/ContadorHooks';
 import ScrollHooks from './componentes/ScrollHoos';
 import RelojHooks from './componentes/RelojHooks';
 import PokemonsHooks from './componentes/AjaxHooks';
+import HooksPersonalizados from './componentes/HooksPersonalizados';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -77,6 +78,8 @@ function App() {
         <RelojHooks/>
         <hr />
         <PokemonsHooks/>
+        <hr />
+        <HooksPersonalizados/>
       </section>
     </>
   )
