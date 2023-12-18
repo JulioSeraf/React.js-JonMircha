@@ -16,6 +16,7 @@ import ScrollHooks from './componentes/ScrollHoos';
 import RelojHooks from './componentes/RelojHooks';
 import PokemonsHooks from './componentes/AjaxHooks';
 import HooksPersonalizados from './componentes/HooksPersonalizados';
+import Referencias from './componentes/Referencia';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -80,6 +81,8 @@ function App() {
         <PokemonsHooks/>
         <hr />
         <HooksPersonalizados/>
+        <hr />
+        <Referencias/>
       </section>
     </>
   )
