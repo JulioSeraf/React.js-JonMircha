@@ -8,6 +8,7 @@ export class EventosES6 extends Component{
         this.state = {
             contador: 0
         }
+        // usamos el metodo bind() para enlasar el this de la class al metodo criado, podemo hacer el bindeo des del evento, pero lo recomendado es hacer directamente en el contructor de la class, por si repitirmos el uso del evento, no tener la necessidad de repitir el bind()
         this.sumar = this.sumar.bind(this);
         this.restar = this.restar.bind(this);
     }
