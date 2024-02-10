@@ -45,10 +45,9 @@ export class EventosES7 extends Component{
     state = {
         contador:0,
     }
-    
-    // para evitar hacer el binding de las this vacias, definimos la functiones con arrow Function ya que heredan el this del contexto que se encontra
+    // no es necessario usar las const , let , var para declarar ya que estamos en una class y atual como metodos
 
-    // no es necessario usar las const , let , var para declarar ya que estamos en un function y atual como metodos
+     // para evitar hacer el binding de las this vacias, definimos la functiones con arrow Function ya que heredan el this del contexto que se encontra
     sumar = ()=>{
         console.log("sumando");
         this.setState({
