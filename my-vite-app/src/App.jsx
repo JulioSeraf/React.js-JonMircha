@@ -17,7 +17,6 @@ import RelojHooks from './componentes/RelojHooks';
 import PokemonsHooks from './componentes/AjaxHooks';
 import HooksPersonalizados from './componentes/HooksPersonalizados';
 import Referencias from './componentes/Referencia';
-import { Test } from './componentes/Test';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -85,7 +84,6 @@ function App() {
         <hr />
         <Referencias/>
         <hr />
-        <Test/>
       </section>
     </>
   )

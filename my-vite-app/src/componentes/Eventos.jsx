@@ -56,6 +56,7 @@ export class EventosES7 extends Component{
     }
     restar = () =>{
         console.log("Restando");
+        console.log(this )
         this.setState({
             contador: this.state.contador >   0 ? this.state.contador - 1: this.state.contador = 0
         })

@@ -1,35 +1,69 @@
 import React,{Component} from "react";
 
-export default class Padre extends Component{
-    state ={
-        contador:0,
-    };
-
-    // Criamos el metodo como arrow funciton para evitar hacer el bind en el this.
-    incrementarContador = (e)=>{
-        this.setState({
-            contador: this.state.contador + 1
-        });
+export default class Padre extends Component(){
+    state = {
+        contador: 0,
     }
 
-    render(props){
+    incrementarComponent = ()=>{
+        this.setState({
+            contador: this.state.contador + 1,
+        })
+    }
+    desminuirComponent = ()=>{
+        this.setState({
+            contador: this.state.contador -1,
+        })
+    }
+    
+    render(){
         return(
             <>
-                <h2>Comunicación entre Componentes</h2>
-                {/* esta es la forma de passar informacíon de de un componente padre para un Componente Hijo, Mediante Props  */}
-                <Hijo contador={this.state.contador} incrementarContador = {this.incrementarContador} mensaje="Mensaje para el Hijo"/>
-                <Hijo mensaje ="Mensaje para el Hijo 2"/>
+                <h2>Comunicanción entre Componentes</h2>
+                <Hijo messagem = "Componente Hijo" contador={this.state.contador} incrementarComponent ={this.incrementarComponent} desminuirComponent={this.desminuirComponent} />
             </>
-        );
-    };
-};
+        )
+    }
+ }
 
-function Hijo (props){
-    return (
-    <>
-        <h3>{props.mensaje}</h3>
-        <button onClick={props.incrementarContador}>+</button>
-        <div>{props.contador }</div>
-    </>)
 
+function Hijo(props){
+    return <>
+        <h3>{props.messagem}</h3>
+        <button onClick={props.incrementarComponent}>+</button>
+        <button onClick={props.desminuirComponent}>-</button>
+        <div>{props.contador}</div>
+    </>
 }
+
+// export default class Padre extends Component{
+//     state ={
+//         contador:0,
+//     };
+
+//     // Criamos el metodo como arrow funciton para evitar hacer el bind en el this.
+//     incrementarContador = (e)=>{
+//         this.setState({
+//             contador: this.state.contador + 1
+//         });
+//     }
+
+//     render(props){
+//         return(
+//             <>
+//                 <h2>Comunicación entre Componentes</h2>
+//                 {/* esta es la forma de passar informacíon de de un componente padre para un Componente Hijo, Mediante Props  */}
+//                 <Hijo contador={this.state.contador} incrementarContador = {this.incrementarContador} mensaje="Mensaje para el Hijo"/>
+//                 <Hijo mensaje ="Mensaje para el Hijo 2"/>
+//             </>
+//         );
+//     };
+// };
+
+// function Hijo (props){
+//     return (
+//     <>
+//         <h3>{props.mensaje}</h3>
+//         <button onClick={props.incrementarContador}>+</button>
+//         <div>{props.contador }</div>
+//     <
