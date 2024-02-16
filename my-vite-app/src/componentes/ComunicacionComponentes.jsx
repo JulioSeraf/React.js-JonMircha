@@ -1,39 +1,40 @@
-import React,{Component} from "react";
+import React,{Component} from "react"
+
 
 export default class Padre extends Component(){
     state = {
         contador: 0,
     }
 
-    incrementarComponent = ()=>{
+    incrementarContador = ()=>{
         this.setState({
             contador: this.state.contador + 1,
         })
     }
-    desminuirComponent = ()=>{
+
+    decrementarContador = ()=>{
         this.setState({
-            contador: this.state.contador -1,
+            contador: this.state.contador - 1,
         })
     }
-    
     render(){
         return(
             <>
-                <h2>Comunicanción entre Componentes</h2>
-                <Hijo messagem = "Componente Hijo" contador={this.state.contador} incrementarComponent ={this.incrementarComponent} desminuirComponent={this.desminuirComponent} />
+                <h2>Comunicación entre Componentes</h2>
+                <Hijo msg="Comunicación a Hijo" incrementarContador={this.incrementarContador} decrementarContador ={this.decrementarContador} contador={this.state.contador}></Hijo>
             </>
         )
     }
- }
-
+}
 
 function Hijo(props){
     return <>
-        <h3>{props.messagem}</h3>
-        <button onClick={props.incrementarComponent}>+</button>
-        <button onClick={props.desminuirComponent}>-</button>
+        <h3>{props.msg}</h3>
+        <button onClick={props.incrementarContador}>+</button>
+        <button onClick={props.decrementarContador}>-</button>
         <div>{props.contador}</div>
     </>
+    
 }
 
 // export default class Padre extends Component{
