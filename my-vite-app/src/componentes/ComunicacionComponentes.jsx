@@ -1,7 +1,6 @@
 import React,{Component} from "react"
 
-
-export default class Padre extends Component(){
+export default class Padre extends Component{
     state = {
         contador: 0,
     }
@@ -21,19 +20,21 @@ export default class Padre extends Component(){
         return(
             <>
                 <h2>Comunicación entre Componentes</h2>
-                <Hijo msg="Comunicación a Hijo" incrementarContador={this.incrementarContador} decrementarContador ={this.decrementarContador} contador={this.state.contador}></Hijo>
+                <Hijo msg="Comunicación a Hijo" incrementarContador={this.incrementarContador} decrementarContador={this.decrementarContador} contador={this.state.contador}/>
             </>
         )
     }
 }
 
 function Hijo(props){
-    return <>
+    return (
+        <>
         <h3>{props.msg}</h3>
         <button onClick={props.incrementarContador}>+</button>
         <button onClick={props.decrementarContador}>-</button>
         <div>{props.contador}</div>
-    </>
+        </>
+    )
     
 }
 
