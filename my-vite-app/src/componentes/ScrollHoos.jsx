@@ -1,5 +1,7 @@
 import React,{useState,useEffect} from "react";
 
+// lembrando que podemos llamar quantos useEffect necessitamos 
+
 export default function ScrollHooks(){
     const [scrollY,setScrollY] = useState();
     // Ejemplo Principal de useEffect
