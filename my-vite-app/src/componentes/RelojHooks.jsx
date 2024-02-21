@@ -18,12 +18,10 @@ export default function RelojHooks(){
             },1000);
         } else{
             clearInterval(temporizador);
-
-            return ()=>{
-                clearInterval(temporizador)
-            }
         };
-        
+        return ()=>{
+            clearInterval(temporizador)
+        };
     },[visible]);
 
     return(

@@ -16,11 +16,11 @@ export default function TextReloj(){
                 setTime(new Date().toLocaleTimeString())
             },1000);
         }else{
-           clearInterval(temporizador);
+           clearInterval(temporizador); 
+        };
 
-            return ()=> {
-                clearInterval(temporizador)
-            }
+        return ()=> {
+            clearInterval(temporizador)
         }
     },[visible]);
 
