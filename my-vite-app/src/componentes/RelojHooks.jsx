@@ -20,9 +20,9 @@ export default function RelojHooks(){
             clearInterval(temporizador);
 
             return ()=>{
-                clearInterval(temporizador);
+                clearInterval(temporizador)
             }
-        }
+        };
         
     },[visible]);
 

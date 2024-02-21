@@ -17,6 +17,7 @@ import RelojHooks from './componentes/RelojHooks';
 import PokemonsHooks from './componentes/AjaxHooks';
 import HooksPersonalizados from './componentes/HooksPersonalizados';
 import Referencias from './componentes/Referencia';
+import TextReloj from './componentes/TextRhooks';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -84,6 +85,7 @@ function App() {
         <hr />
         <Referencias/>
         <hr />
+        <TextReloj/>
       </section>
     </>
   )
