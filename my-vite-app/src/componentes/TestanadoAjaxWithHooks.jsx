@@ -1,22 +1,25 @@
 import React,{useState,useEffect} from "react";
 
-
 export default function TestAjaxHooks(){
-    const [pokemon, setPokemon] = useState([]);
+    const [pokeball,setPokeball] = useState([]);
 
     useEffect(()=>{
 
-        const getDataPokemons = async (url)=>{
-
+        const getData = async(url)=>{
             let res = await fetch(url);
-            let pokemon = await res.json()
-            console.log(pokemon)
-        }
+            let json = await res.json();
+            
+            json.results.forEach(async(el) => {
+                let res = await fetch(el.url);
+                let pokemon = await res.json()
+            });
+        };
 
-        getDataPokemons("https://pokeapi.co/api/v2/pokemon/");
+        getData("https://pokeapi.co/api/v2/pokemon/")
 
-    },[])
+    },[]);
 
-
-    return(<><p>ok</p></>)
-}
+    return(<>
+        <h3>ok</h3>
+    </>)
+};

@@ -40,7 +40,7 @@ export default function PokemonsHooks(){
     const [pokeball,setPokeball] = useState([]);
 
     useEffect(()=>{
-        // Para usar funciones asincronas en useEffect lo correto es criar na funcion dentro del useEffect para hacerla asincrona ja que tornar la directamente la funcion callback de useEffect asincona el una mala patrica q puede nos causar problemas mas a delante
+        // Para usar funciones asincronas en useEffect lo correto es criar na funcion dentro del useEffect para hacerla asincrona ja que tornar la directamente la funcion callback de useEffect asincona es una mala pratica (un anitpatron) q puede nos causar problemas mas a delante
 
         const getDataPokemons = async (url)=>{
             let res = await fetch(url),
