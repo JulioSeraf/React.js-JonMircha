@@ -18,6 +18,7 @@ import PokemonsHooks from './componentes/AjaxHooks';
 import HooksPersonalizados from './componentes/HooksPersonalizados';
 import Referencias from './componentes/Referencia';
 import TextReloj from './componentes/TextRhooks';
+import TestAjaxHooks from './componentes/TestanadoAjaxWithHooks';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -85,7 +86,10 @@ function App() {
         <hr />
         <Referencias/>
         <hr />
+        <h1>Repasando Estudos</h1>
         <TextReloj/>
+        <hr />
+        <TestAjaxHooks/>
       </section>
     </>
   )
