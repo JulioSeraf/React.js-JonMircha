@@ -12,6 +12,7 @@ import ComunicacionComponentes from './Componentes/12_Comunicación-entre-Compon
 import CicloDeVida from './Componentes/13_CiclodeVida';
 import Hooks from './Componentes/15_Hooks';
 import Reloj from './Componentes/reloj';
+import Referencias from './Componentes/16-Referencia';
 
 function App() {
   return (
@@ -44,7 +45,8 @@ function App() {
       <CicloDeVida/>
       <hr />
       <Hooks/>
-      
+      <hr />
+      <Referencias/>
     </>
   )
 }

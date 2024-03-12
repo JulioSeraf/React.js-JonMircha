@@ -2,7 +2,7 @@
 
 // Reacpitulación
 
-// - Las Refs son una puerta de escape para guardar calores que no se usan en el renderizado. No las necesitaras a menudo.
+// - Las Refs son una puerta de escape para guardar valores que no se usan en el renderizado. No las necesitaras a menudo.
 
 // - Una Refs es un Objeto plano de JavaScript con una sola propiedad llamada "current", que puedes leer o asignarle un valor.
 
@@ -16,16 +16,31 @@
 import React from "react";
 
 export default function Referencias(){
+    const handleToggleMenu = (e)=>{
+        const $menu = document.getElementById("menu");
+
+        if( $menu.style.display === "none"){
+            e.target.textContent = "Cerrar";
+            $menu.style.display = "block";
+        }else{
+            $menu.style.display = "none";
+            e.target.textContent = "Menu";
+        }
+    }
     return(
         <div>
             <h2>Referencias</h2>
-            <button id="menu-btn">Menu</button>
-            <nav id="menu">
+            <button id="menu-btn" onClick={handleToggleMenu}>Menu</button>
+            <nav id="menu" style={{display: "none"}}>
                 <a href="">section 1</a>
+                <br />
                 <a href="">section 2</a>
-                <a href="">section 3</a><
-                    a href="">section 4</a>
-                    <a href="">section 5</a>
+                <br />
+                <a href="">section 3</a>
+                <br />
+                <a href="">section 4</a>
+                <br />
+                <a href="">section 5</a>
             </nav>
         </div>
     );
