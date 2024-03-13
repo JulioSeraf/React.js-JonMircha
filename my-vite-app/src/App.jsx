@@ -19,11 +19,17 @@ import HooksPersonalizados from './componentes/HooksPersonalizados';
 import Referencias from './componentes/Referencia';
 import TextReloj from './componentes/TextRhooks';
 import TestAjaxHooks from './componentes/TestanadoAjaxWithHooks';
+import Formulario from './componentes/Formularios';
+import NavList from './componentes/NavList';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <nav className='listaComponente'>
+        <NavList/>
+      </nav>
+      <section>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -44,7 +50,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <section>
+      </section>
+      <section className='componentes'>
         <Componente msg="Hola soy un componente Funcional expresado desde una props"/>
         {/* para passar un numero tenemos que usar {} ya que se usamos las "" seria una cadena de texto y a los booleanos igual */}
         <Propiedades cadena="Esto es una cadena de texto" 
@@ -90,6 +97,8 @@ function App() {
         <TextReloj/>
         <hr />
         <TestAjaxHooks/>
+        <hr />
+        <Formulario/>
       </section>
     </>
   )
