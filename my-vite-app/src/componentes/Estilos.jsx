@@ -1,6 +1,7 @@
 import React from "react";
 import "./Estilos.css";
 import styleModule from "./Estilos.module.css";
+// import "./Estilos.scss"
 export default function Estilos(){
     let myStyle = {
         borderRadius:".5rem",
@@ -21,10 +22,11 @@ export default function Estilos(){
             {/* *Hay una tecnica que se considera estilos como modulos, si queries tratar un hoje de estilos como modulos la deve escrevir con el .modulo seguido del .css ex: Estilos.modulo.css*/}
             {/* Al llamar la importacion tan criamos un variables(nombramos la importacion)para poder trabajar com el modulo com la sintaxi del punto, assim podemos assesar los estilos de la hoja css, como vemos abajo via className */}
 
-            <h3 className={styleModule.error}>Estilos com modulos css</h3>
-            <h3 className={styleModule.success}>Estilos com modulos css</h3>
+            <h3 className={styleModule.error}>Estilos com módulos css</h3>
+            <h3 className={styleModule.success}>Estilos com módulos css</h3>
 
-            {/* * Otra opción seria com Sass */}
+            {/* * Otra opción seria com Sass  pero com Create React app*/}
+            <h3 className="bg-sass">Estilos con SASS</h3>
 
 
         </section>
