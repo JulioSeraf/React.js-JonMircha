@@ -22,6 +22,7 @@ import TestAjaxHooks from './componentes/TestanadoAjaxWithHooks';
 import Formulario from './componentes/Formularios';
 import NavList from './componentes/NavList';
 import Estilos from './componentes/Estilos';
+import ComponentesEstilizados from './componentes/componenteEstilizado';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -102,6 +103,8 @@ function App() {
         <Formulario/>
         <hr />
         <Estilos/>
+        <hr />
+        <ComponentesEstilizados/>
       </section>
     </>
   )
